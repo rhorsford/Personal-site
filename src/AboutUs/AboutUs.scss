@@ -1,0 +1,61 @@
+section {
+  width: 100%;
+  padding: 100px 0 130px 0;
+      border-top:3px solid #1dbf73;
+
+  h1 {
+    margin-bottom: 1.5em;
+  }
+}
+
+#about {
+  .about-content {
+      padding: 0 50px 0 50px;
+  }
+}
+
+.icon {
+  width :100px;
+  height: 100%;
+  position:relative;
+  margin: 1.2em auto;
+
+  p, h3 {
+    margin: 1em -55px 0.5em;
+  }
+}
+
+.hexagon {
+ background-color: #1dbf73;
+  display: inline-block;
+  height: 100px;
+  width: calc(100% * 0.57735);
+ //padding-top: 20%;
+
+   &:before, &:after{
+     background-color: inherit;
+     content: '';
+     height: inherit;
+     position: absolute;
+     right: calc((100% / 2) - ((100% * 0.57735) / 2));
+     top: 0;
+     width: inherit;
+   }
+
+  &:before {
+    transform: rotateZ(60deg);
+    z-index: -2;
+  }
+
+  &:after {
+    transform: rotateZ(-60deg);
+    z-index: -1;
+  }
+
+  .MuiSvgIcon-root {
+    width: 55px;
+    height: 55px;
+    color: white;
+    margin-top: 33.333%;
+  }
+}

@@ -1,0 +1,39 @@
+section#contact {
+  width: 100%;
+  padding: 0px 0 130px 0;
+  position: relative;
+  background-color: #222222;
+  border-top: 0;
+
+  &:before {
+    position: absolute;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 50%;
+    content: '';
+    background: inherit;
+    top: -50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-origin: top left;
+    transform: skewY(3deg);
+    z-index: -1;
+  }
+
+  h1, h2, p {
+    color: white;
+  }
+
+  .MuiInputBase-root {
+    color: white;
+    background-color: #353535;
+  }
+    button.MuiButtonBase-root {
+      margin-top:16px;
+      padding: 10px 25px;
+      color: white;
+      border: 1px solid #ffffff;
+    }
+
+}

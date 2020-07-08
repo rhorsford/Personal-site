@@ -1,0 +1,35 @@
+#chart {
+  display: inline-block;
+  margin-top: 2em;
+  width: 100%; }
+  #chart .bar {
+    width: 100%;
+    background-color: #eee;
+    height: 30px;
+    margin: 0 0 15px 0;
+    font-size: 11pt;
+    position: relative; }
+    #chart .bar .tag {
+      float: left;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      line-height: 30px;
+      width: 120px;
+      color: white;
+      background-color: #1dbf73;
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #chart .bar .bar-fill {
+      background-color: #20dc88;
+      display: inline-block;
+      height: 30px;
+      float: left;
+      position: relative;
+      left: 120px; }
+    #chart .bar span {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      z-index: 2; }

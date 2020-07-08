@@ -1,0 +1,115 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #222222;
+  min-height: 100%;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+
+.header-flex-container {
+ height: 100%;
+
+
+  .header-flex-box {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+    h1, p {
+      color: white;
+    }
+
+    p {
+      font-size: 1.25em;
+    }
+
+    button.MuiButtonBase-root {
+      padding: 10px 15px;
+      border: 2px solid #ffffff;
+      color: white;
+    }
+
+  }
+}
+
+.bubble-wrap {
+  margin: 0 auto;
+  width:  500px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  perspective: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.bubble {
+  position: absolute;
+  background: black;
+  opacity: .7;
+  border-radius: 50%;
+  animation: move 4s infinite;
+
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, -1000px);
+  }
+}
+
+@for $i from 1 through 100 {
+  .bubble:nth-child(#{$i}) {
+    $size: random(30)+px;
+    height: $size;
+    width: $size;
+    animation-delay: -$i * .2s;
+    transform: translate3d((random(1000) * 1px), (random(1000) * 1px), (random(2000) * 1px));
+    background: hsl(random(360), 70%, 50%);
+  }
+}
+
+
+//scroll mouse
+
+.scroll-downs {
+  position: absolute;
+  //top: 0;
+  right: 0;
+  bottom: 30px;
+  left: 0;
+  margin: auto;
+
+  width: 34px;
+  height: 45px;
+}
+.mousey {
+  width: 3px;
+  padding: 0 10px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
