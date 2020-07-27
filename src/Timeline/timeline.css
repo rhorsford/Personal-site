@@ -2,6 +2,7 @@ main {
   position: relative;
   background-color: #F2EEDD;
   background-image: linear-gradient(to bottom, #22DC88 0%, #1dbf73 100%);
+  min-height: 500vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,6 +106,10 @@ main {
   text-align: center;
   text-transform: uppercase;
   z-index: 101; }
+  @media (max-width: 800px) {
+    .back {
+      right: 20px;
+      bottom: 15px; } }
   .back i {
     font-size: 20px;
     position: relative;
@@ -121,26 +126,26 @@ main {
     fill: url(#gradient-2); }
 
 .svg-shape-1 {
-  top: 143px;
-  left: 305px;
+  top: 290px;
+  left: 949px;
   width: 200px;
   height: 200px;
-  transform: rotate(278deg);
+  transform: rotate(97deg);
   z-index: 10;
   position: absolute; }
 
 .svg-shape-2 {
-  top: 227px;
-  left: 1320px;
+  top: 292px;
+  left: 926px;
   width: 200px;
   height: 200px;
-  transform: rotate(107deg);
+  transform: rotate(83deg);
   z-index: 9;
   position: absolute; }
 
 .svg-shape-3 {
-  top: 399px;
-  left: 1244px;
+  top: 187px;
+  left: 314px;
   width: 200px;
   height: 200px;
   transform: rotate(26deg);
@@ -148,527 +153,527 @@ main {
   position: absolute; }
 
 .svg-shape-4 {
-  top: 493px;
-  left: 127px;
+  top: 77px;
+  left: 88px;
   width: 200px;
   height: 200px;
-  transform: rotate(323deg);
+  transform: rotate(255deg);
   z-index: 7;
   position: absolute; }
 
 .svg-shape-5 {
-  top: 103px;
-  left: 1014px;
+  top: 269px;
+  left: 1005px;
   width: 200px;
   height: 200px;
-  transform: rotate(332deg);
+  transform: rotate(115deg);
   z-index: 6;
   position: absolute; }
 
 .svg-shape-6 {
-  top: 182px;
-  left: 1035px;
+  top: 264px;
+  left: 456px;
   width: 200px;
   height: 200px;
-  transform: rotate(215deg);
+  transform: rotate(22deg);
   z-index: 5;
   position: absolute; }
 
 .svg-shape-7 {
-  top: 416px;
-  left: 1056px;
+  top: 90px;
+  left: 83px;
   width: 200px;
   height: 200px;
-  transform: rotate(171deg);
+  transform: rotate(199deg);
   z-index: 4;
   position: absolute; }
 
 .svg-shape-8 {
-  top: 430px;
-  left: 580px;
+  top: 279px;
+  left: 931px;
   width: 200px;
   height: 200px;
-  transform: rotate(17deg);
+  transform: rotate(282deg);
   z-index: 3;
   position: absolute; }
 
 .svg-shape-9 {
-  top: 396px;
-  left: 1351px;
+  top: 103px;
+  left: 102px;
   width: 200px;
   height: 200px;
-  transform: rotate(171deg);
+  transform: rotate(316deg);
   z-index: 2;
   position: absolute; }
 
 .svg-shape-10 {
-  top: 72px;
-  left: 493px;
+  top: 443px;
+  left: 784px;
   width: 200px;
   height: 200px;
-  transform: rotate(238deg);
+  transform: rotate(271deg);
   z-index: 1;
   position: absolute; }
 
 .lines-container {
   transform: translateX(-50%); }
   .lines-container .svg-line-0 {
-    top: 36px;
-    left: 318px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(259deg);
-    z-index: 32;
-    position: absolute; }
-  .lines-container .svg-line-1 {
-    top: 99px;
-    left: 162px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(149deg);
-    z-index: 31;
-    position: absolute; }
-  .lines-container .svg-line-2 {
-    top: 103px;
-    left: 584px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(64deg);
-    z-index: 30;
-    position: absolute; }
-  .lines-container .svg-line-3 {
-    top: 73px;
-    left: 946px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(142deg);
-    z-index: 29;
-    position: absolute; }
-  .lines-container .svg-line-4 {
-    top: 205px;
-    left: 1099px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(245deg);
-    z-index: 28;
-    position: absolute; }
-  .lines-container .svg-line-5 {
-    top: 477px;
-    left: 366px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(179deg);
-    z-index: 27;
-    position: absolute; }
-  .lines-container .svg-line-6 {
-    top: 310px;
-    left: 350px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(8deg);
-    z-index: 26;
-    position: absolute; }
-  .lines-container .svg-line-7 {
-    top: 113px;
-    left: 320px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(256deg);
-    z-index: 25;
-    position: absolute; }
-  .lines-container .svg-line-8 {
-    top: 497px;
-    left: 1045px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(227deg);
-    z-index: 24;
-    position: absolute; }
-  .lines-container .svg-line-9 {
-    top: 187px;
+    top: 64px;
     left: 262px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(98deg);
-    z-index: 23;
-    position: absolute; }
-  .lines-container .svg-line-10 {
-    top: 351px;
-    left: 456px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(354deg);
-    z-index: 22;
-    position: absolute; }
-  .lines-container .svg-line-11 {
-    top: 143px;
-    left: 695px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(53deg);
-    z-index: 21;
-    position: absolute; }
-  .lines-container .svg-line-12 {
-    top: 387px;
-    left: 1100px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(216deg);
-    z-index: 20;
-    position: absolute; }
-  .lines-container .svg-line-13 {
-    top: 250px;
-    left: 728px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(125deg);
-    z-index: 19;
-    position: absolute; }
-  .lines-container .svg-line-14 {
-    top: 379px;
-    left: 894px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(53deg);
-    z-index: 18;
-    position: absolute; }
-  .lines-container .svg-line-15 {
-    top: 106px;
-    left: 119px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(273deg);
-    z-index: 17;
-    position: absolute; }
-  .lines-container .svg-line-16 {
-    top: 107px;
-    left: 57px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(144deg);
-    z-index: 16;
-    position: absolute; }
-  .lines-container .svg-line-17 {
-    top: 398px;
-    left: 1194px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(331deg);
-    z-index: 15;
-    position: absolute; }
-  .lines-container .svg-line-18 {
-    top: 343px;
-    left: 267px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(354deg);
-    z-index: 14;
-    position: absolute; }
-  .lines-container .svg-line-19 {
-    top: 411px;
-    left: 1109px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(335deg);
-    z-index: 13;
-    position: absolute; }
-  .lines-container .svg-line-20 {
-    top: 289px;
-    left: 852px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(193deg);
-    z-index: 12;
-    position: absolute; }
-  .lines-container .svg-line-21 {
-    top: 256px;
-    left: 862px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(31deg);
-    z-index: 11;
-    position: absolute; }
-  .lines-container .svg-line-22 {
-    top: 132px;
-    left: 738px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(69deg);
-    z-index: 10;
-    position: absolute; }
-  .lines-container .svg-line-23 {
-    top: 318px;
-    left: 264px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(279deg);
-    z-index: 9;
-    position: absolute; }
-  .lines-container .svg-line-24 {
-    top: 39px;
-    left: 181px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(158deg);
-    z-index: 8;
-    position: absolute; }
-  .lines-container .svg-line-25 {
-    top: 153px;
-    left: 854px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(243deg);
-    z-index: 7;
-    position: absolute; }
-  .lines-container .svg-line-26 {
-    top: 290px;
-    left: 114px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(357deg);
-    z-index: 6;
-    position: absolute; }
-  .lines-container .svg-line-27 {
-    top: 377px;
-    left: 756px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(232deg);
-    z-index: 5;
-    position: absolute; }
-  .lines-container .svg-line-28 {
-    top: 354px;
-    left: 192px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(24deg);
-    z-index: 4;
-    position: absolute; }
-  .lines-container .svg-line-29 {
-    top: 67px;
-    left: 664px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(161deg);
-    z-index: 3;
-    position: absolute; }
-  .lines-container .svg-line-30 {
-    top: 131px;
-    left: 272px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(146deg);
-    z-index: 2;
-    position: absolute; }
-  .lines-container .svg-line-31 {
-    top: 187px;
-    left: 568px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(96deg);
-    z-index: 1;
-    position: absolute; }
-  .lines-container .svg-line-32 {
-    top: 80px;
-    left: 338px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
-    transform: rotate(31deg);
-    z-index: 0;
-    position: absolute; }
-  .lines-container .svg-line-33 {
-    top: 375px;
-    left: 943px;
-    width: 50px;
-    height: 50px;
-    stroke: #1d7773;
     transform: rotate(332deg);
-    z-index: -1;
+    z-index: 32;
     position: absolute; }
-  .lines-container .svg-line-34 {
-    top: 22px;
-    left: 15px;
+  .lines-container .svg-line-1 {
+    top: 224px;
+    left: 866px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(150deg);
-    z-index: -2;
+    transform: rotate(178deg);
+    z-index: 31;
     position: absolute; }
-  .lines-container .svg-line-35 {
-    top: 393px;
-    left: 662px;
+  .lines-container .svg-line-2 {
+    top: 304px;
+    left: 493px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(111deg);
-    z-index: -3;
+    transform: rotate(109deg);
+    z-index: 30;
     position: absolute; }
-  .lines-container .svg-line-36 {
-    top: 40px;
-    left: 42px;
+  .lines-container .svg-line-3 {
+    top: 236px;
+    left: 823px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(327deg);
-    z-index: -4;
+    transform: rotate(248deg);
+    z-index: 29;
     position: absolute; }
-  .lines-container .svg-line-37 {
-    top: 18px;
-    left: 3px;
+  .lines-container .svg-line-4 {
+    top: 143px;
+    left: 1158px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(359deg);
-    z-index: -5;
+    transform: rotate(351deg);
+    z-index: 28;
     position: absolute; }
-  .lines-container .svg-line-38 {
-    top: 328px;
-    left: 427px;
+  .lines-container .svg-line-5 {
+    top: 138px;
+    left: 1104px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(171deg);
-    z-index: -6;
+    transform: rotate(315deg);
+    z-index: 27;
     position: absolute; }
-  .lines-container .svg-line-39 {
-    top: 17px;
-    left: 231px;
+  .lines-container .svg-line-6 {
+    top: 230px;
+    left: 549px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(102deg);
-    z-index: -7;
+    transform: rotate(322deg);
+    z-index: 26;
     position: absolute; }
-  .lines-container .svg-line-40 {
-    top: 415px;
-    left: 361px;
+  .lines-container .svg-line-7 {
+    top: 493px;
+    left: 489px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
     transform: rotate(138deg);
-    z-index: -8;
+    z-index: 25;
     position: absolute; }
-  .lines-container .svg-line-41 {
-    top: 45px;
-    left: 524px;
+  .lines-container .svg-line-8 {
+    top: 172px;
+    left: 961px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(121deg);
-    z-index: -9;
+    transform: rotate(50deg);
+    z-index: 24;
     position: absolute; }
-  .lines-container .svg-line-42 {
-    top: 332px;
-    left: 313px;
+  .lines-container .svg-line-9 {
+    top: 238px;
+    left: 815px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(106deg);
+    z-index: 23;
+    position: absolute; }
+  .lines-container .svg-line-10 {
+    top: 353px;
+    left: 884px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(216deg);
+    z-index: 22;
+    position: absolute; }
+  .lines-container .svg-line-11 {
+    top: 6px;
+    left: 455px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(61deg);
+    z-index: 21;
+    position: absolute; }
+  .lines-container .svg-line-12 {
+    top: 469px;
+    left: 711px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(19deg);
+    z-index: 20;
+    position: absolute; }
+  .lines-container .svg-line-13 {
+    top: 110px;
+    left: 904px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(32deg);
+    z-index: 19;
+    position: absolute; }
+  .lines-container .svg-line-14 {
+    top: 210px;
+    left: 575px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(261deg);
+    z-index: 18;
+    position: absolute; }
+  .lines-container .svg-line-15 {
+    top: 79px;
+    left: 119px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(33deg);
+    z-index: 17;
+    position: absolute; }
+  .lines-container .svg-line-16 {
+    top: 83px;
+    left: 368px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(219deg);
+    z-index: 16;
+    position: absolute; }
+  .lines-container .svg-line-17 {
+    top: 404px;
+    left: 1122px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(140deg);
+    z-index: 15;
+    position: absolute; }
+  .lines-container .svg-line-18 {
+    top: 76px;
+    left: 1008px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(96deg);
+    z-index: 14;
+    position: absolute; }
+  .lines-container .svg-line-19 {
+    top: 75px;
+    left: 162px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(350deg);
+    z-index: 13;
+    position: absolute; }
+  .lines-container .svg-line-20 {
+    top: 199px;
+    left: 602px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(294deg);
+    z-index: 12;
+    position: absolute; }
+  .lines-container .svg-line-21 {
+    top: 465px;
+    left: 386px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(268deg);
+    z-index: 11;
+    position: absolute; }
+  .lines-container .svg-line-22 {
+    top: 97px;
+    left: 190px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(233deg);
+    z-index: 10;
+    position: absolute; }
+  .lines-container .svg-line-23 {
+    top: 470px;
+    left: 1193px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(72deg);
+    z-index: 9;
+    position: absolute; }
+  .lines-container .svg-line-24 {
+    top: 187px;
+    left: 381px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
     transform: rotate(68deg);
+    z-index: 8;
+    position: absolute; }
+  .lines-container .svg-line-25 {
+    top: 272px;
+    left: 139px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(292deg);
+    z-index: 7;
+    position: absolute; }
+  .lines-container .svg-line-26 {
+    top: 334px;
+    left: 1031px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(17deg);
+    z-index: 6;
+    position: absolute; }
+  .lines-container .svg-line-27 {
+    top: 396px;
+    left: 1062px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(258deg);
+    z-index: 5;
+    position: absolute; }
+  .lines-container .svg-line-28 {
+    top: 150px;
+    left: 1148px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(174deg);
+    z-index: 4;
+    position: absolute; }
+  .lines-container .svg-line-29 {
+    top: 201px;
+    left: 1000px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(32deg);
+    z-index: 3;
+    position: absolute; }
+  .lines-container .svg-line-30 {
+    top: 28px;
+    left: 668px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(206deg);
+    z-index: 2;
+    position: absolute; }
+  .lines-container .svg-line-31 {
+    top: 321px;
+    left: 1030px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(305deg);
+    z-index: 1;
+    position: absolute; }
+  .lines-container .svg-line-32 {
+    top: 455px;
+    left: 1130px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(154deg);
+    z-index: 0;
+    position: absolute; }
+  .lines-container .svg-line-33 {
+    top: 433px;
+    left: 634px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(48deg);
+    z-index: -1;
+    position: absolute; }
+  .lines-container .svg-line-34 {
+    top: 493px;
+    left: 742px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(268deg);
+    z-index: -2;
+    position: absolute; }
+  .lines-container .svg-line-35 {
+    top: 267px;
+    left: 309px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(209deg);
+    z-index: -3;
+    position: absolute; }
+  .lines-container .svg-line-36 {
+    top: 15px;
+    left: 420px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(20deg);
+    z-index: -4;
+    position: absolute; }
+  .lines-container .svg-line-37 {
+    top: 314px;
+    left: 1126px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(31deg);
+    z-index: -5;
+    position: absolute; }
+  .lines-container .svg-line-38 {
+    top: 177px;
+    left: 191px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(209deg);
+    z-index: -6;
+    position: absolute; }
+  .lines-container .svg-line-39 {
+    top: 264px;
+    left: 104px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(348deg);
+    z-index: -7;
+    position: absolute; }
+  .lines-container .svg-line-40 {
+    top: 106px;
+    left: 893px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(331deg);
+    z-index: -8;
+    position: absolute; }
+  .lines-container .svg-line-41 {
+    top: 485px;
+    left: 575px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(131deg);
+    z-index: -9;
+    position: absolute; }
+  .lines-container .svg-line-42 {
+    top: 252px;
+    left: 317px;
+    width: 50px;
+    height: 50px;
+    stroke: #1d7773;
+    transform: rotate(329deg);
     z-index: -10;
     position: absolute; }
   .lines-container .svg-line-43 {
-    top: 409px;
-    left: 543px;
+    top: 35px;
+    left: 1082px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(164deg);
+    transform: rotate(254deg);
     z-index: -11;
     position: absolute; }
   .lines-container .svg-line-44 {
-    top: 223px;
-    left: 410px;
+    top: 429px;
+    left: 1185px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(180deg);
+    transform: rotate(282deg);
     z-index: -12;
     position: absolute; }
   .lines-container .svg-line-45 {
-    top: 135px;
-    left: 256px;
+    top: 254px;
+    left: 997px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(249deg);
+    transform: rotate(150deg);
     z-index: -13;
     position: absolute; }
   .lines-container .svg-line-46 {
-    top: 189px;
-    left: 1140px;
+    top: 428px;
+    left: 90px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(191deg);
+    transform: rotate(322deg);
     z-index: -14;
     position: absolute; }
   .lines-container .svg-line-47 {
-    top: 200px;
-    left: 587px;
+    top: 80px;
+    left: 826px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(21deg);
+    transform: rotate(339deg);
     z-index: -15;
     position: absolute; }
   .lines-container .svg-line-48 {
-    top: 359px;
-    left: 882px;
+    top: 232px;
+    left: 953px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(238deg);
+    transform: rotate(245deg);
     z-index: -16;
     position: absolute; }
   .lines-container .svg-line-49 {
-    top: 41px;
-    left: 244px;
+    top: 156px;
+    left: 168px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(47deg);
+    transform: rotate(97deg);
     z-index: -17;
     position: absolute; }
   .lines-container .svg-line-50 {
-    top: 455px;
-    left: 363px;
+    top: 368px;
+    left: 64px;
     width: 50px;
     height: 50px;
     stroke: #1d7773;
-    transform: rotate(99deg);
+    transform: rotate(121deg);
     z-index: -18;
     position: absolute; }
 
@@ -676,115 +681,115 @@ main {
   transform: translateX(-50%);
   z-index: -1; }
   .squares-container .svg-square-0 {
-    top: 174px;
-    left: 121px;
+    top: 976px;
+    left: 579px;
     width: 400px;
     height: 400px;
     transform: rotate(5deg);
     position: absolute; }
     .squares-container .svg-square-0 .square-0 path {
       transform: translate(50%, 50%);
-      fill: rgba(29, 119, 3, 0.5); }
+      fill: rgba(29, 119, 91, 0.5); }
   .squares-container .svg-square-1 {
-    top: 408px;
-    left: 771px;
-    width: 400px;
-    height: 400px;
-    transform: rotate(21deg);
-    position: absolute; }
-    .squares-container .svg-square-1 .square-1 path {
-      transform: translate(50%, 50%);
-      fill: rgba(29, 119, 83, 0.5); }
-  .squares-container .svg-square-2 {
-    top: 814px;
-    left: 779px;
+    top: 65px;
+    left: 217px;
     width: 400px;
     height: 400px;
     transform: rotate(11deg);
     position: absolute; }
-    .squares-container .svg-square-2 .square-2 path {
+    .squares-container .svg-square-1 .square-1 path {
       transform: translate(50%, 50%);
-      fill: rgba(29, 119, 34, 0.5); }
-  .squares-container .svg-square-3 {
-    top: 497px;
-    left: 802px;
+      fill: rgba(29, 119, 6, 0.5); }
+  .squares-container .svg-square-2 {
+    top: 838px;
+    left: 278px;
     width: 400px;
     height: 400px;
-    transform: rotate(12deg);
+    transform: rotate(35deg);
+    position: absolute; }
+    .squares-container .svg-square-2 .square-2 path {
+      transform: translate(50%, 50%);
+      fill: rgba(29, 119, 22, 0.5); }
+  .squares-container .svg-square-3 {
+    top: 164px;
+    left: 564px;
+    width: 400px;
+    height: 400px;
+    transform: rotate(7deg);
     position: absolute; }
     .squares-container .svg-square-3 .square-3 path {
       transform: translate(50%, 50%);
-      fill: rgba(29, 119, 45, 0.5); }
+      fill: rgba(29, 119, 48, 0.5); }
   .squares-container .svg-square-4 {
-    top: 673px;
-    left: 837px;
+    top: 647px;
+    left: 675px;
     width: 400px;
     height: 400px;
-    transform: rotate(20deg);
+    transform: rotate(35deg);
     position: absolute; }
     .squares-container .svg-square-4 .square-4 path {
       transform: translate(50%, 50%);
-      fill: rgba(29, 119, 32, 0.5); }
+      fill: rgba(29, 119, 21, 0.5); }
   .squares-container .svg-square-5 {
-    top: 946px;
-    left: 901px;
+    top: 515px;
+    left: 858px;
     width: 400px;
     height: 400px;
-    transform: rotate(14deg);
+    transform: rotate(40deg);
     position: absolute; }
     .squares-container .svg-square-5 .square-5 path {
       transform: translate(50%, 50%);
-      fill: rgba(29, 119, 38, 0.5); }
+      fill: rgba(29, 119, 22, 0.5); }
   .squares-container .svg-square-6 {
-    top: 325px;
-    left: 500px;
+    top: 697px;
+    left: 664px;
     width: 400px;
     height: 400px;
-    transform: rotate(30deg);
+    transform: rotate(21deg);
     position: absolute; }
     .squares-container .svg-square-6 .square-6 path {
       transform: translate(50%, 50%);
-      fill: rgba(29, 119, 37, 0.5); }
+      fill: rgba(29, 119, 102, 0.5); }
   .squares-container .svg-square-7 {
-    top: 26px;
-    left: 647px;
+    top: 371px;
+    left: 3px;
     width: 400px;
     height: 400px;
     transform: rotate(10deg);
     position: absolute; }
     .squares-container .svg-square-7 .square-7 path {
       transform: translate(50%, 50%);
-      fill: rgba(29, 119, 10, 0.5); }
+      fill: rgba(29, 119, 86, 0.5); }
   .squares-container .svg-square-8 {
-    top: 385px;
-    left: 618px;
+    top: 799px;
+    left: 1090px;
     width: 400px;
     height: 400px;
-    transform: rotate(7deg);
+    transform: rotate(36deg);
     position: absolute; }
     .squares-container .svg-square-8 .square-8 path {
       transform: translate(50%, 50%);
-      fill: rgba(29, 119, 108, 0.5); }
+      fill: rgba(29, 119, 70, 0.5); }
   .squares-container .svg-square-9 {
-    top: 948px;
-    left: 434px;
+    top: 866px;
+    left: 840px;
     width: 400px;
     height: 400px;
-    transform: rotate(32deg);
+    transform: rotate(20deg);
     position: absolute; }
     .squares-container .svg-square-9 .square-9 path {
       transform: translate(50%, 50%);
-      fill: rgba(29, 119, 21, 0.5); }
+      fill: rgba(29, 119, 39, 0.5); }
   .squares-container .svg-square-10 {
-    top: 830px;
-    left: 921px;
+    top: 847px;
+    left: 606px;
     width: 400px;
     height: 400px;
-    transform: rotate(30deg);
+    transform: rotate(1deg);
     position: absolute; }
     .squares-container .svg-square-10 .square-10 path {
       transform: translate(50%, 50%);
-      fill: rgba(29, 119, 102, 0.5); }
+      fill: rgba(29, 119, 5, 0.5); }
 
 .sunsetbg {
   background-color: #ffffff;
@@ -811,6 +816,9 @@ main {
     padding: 10px;
     margin-bottom: 1em;
     text-align: right; }
+    @media (max-width: 1200px) {
+      .line .timeline .left {
+        left: 0; } }
     .line .timeline .left p, .line .timeline .left h3, .line .timeline .left h4, .line .timeline .left h2 {
       color: white; }
     .line .timeline .left p {
@@ -830,7 +838,11 @@ main {
   .line .timeline .right {
     float: right;
     width: 47.5%;
-    text-align: left; }
+    text-align: left;
+    right: -10px; }
+    @media (max-width: 1200px) {
+      .line .timeline .right {
+        right: 0; } }
     .line .timeline .right .hexagon {
       color: white;
       background-color: #fff; }
@@ -846,9 +858,18 @@ main {
     .line .timeline .right h3 {
       margin-top: 10px; }
   .line .timeline .left, .line .timeline .right {
-    position: relative;
+    position: absolute;
     margin-bottom: 2em;
     margin-top: 2em; }
+    @media (max-width: 1200px) {
+      .line .timeline .left, .line .timeline .right {
+        width: calc(47.5% - 35px); } }
+    @media (max-width: 800px) {
+      .line .timeline .left, .line .timeline .right {
+        width: 100%;
+        padding: 0 60px;
+        text-align: center;
+        position: relative; } }
     .line .timeline .left .icon, .line .timeline .right .icon {
       height: 100px; }
     .line .timeline .left .skills, .line .timeline .right .skills {
@@ -876,6 +897,10 @@ main {
   height: 100%;
   z-index: 101;
   transform: translateX(-50%); }
+  @media (max-width: 800px) {
+    .app-nav {
+      transform: translateX(0%);
+      right: 15px; } }
   .app-nav ul {
     position: relative;
     list-style: none;
@@ -936,6 +961,14 @@ section {
   section.time-span {
     border: 0;
     height: 100vh; }
+    @media (max-width: 800px) {
+      section.time-span {
+        display: inline-block;
+        height: auto;
+        padding: 100px 0 0 0;
+        float: left; } }
+    section.time-span:last-child {
+      height: 915px; }
     section.time-span.waves {
       position: relative; }
       section.time-span.waves .wave-1, section.time-span.waves .wave-2 {
@@ -960,6 +993,21 @@ section {
         -o-transform: rotate(180deg);
         transform: rotate(180deg);
         top: 310px; }
+        @media (max-width: 1414px) {
+          section.time-span.waves .wave-2 {
+            top: calc(310px - 20%); } }
+        @media (max-width: 995px) {
+          section.time-span.waves .wave-2 {
+            top: calc(280px - 30%); } }
+        @media (max-width: 800px) {
+          section.time-span.waves .wave-2 {
+            top: calc(310px - 15%); } }
+        @media (max-width: 652px) {
+          section.time-span.waves .wave-2 {
+            top: calc(280px - 15%); } }
+        @media (max-width: 590px) {
+          section.time-span.waves .wave-2 {
+            top: calc(280px - 16.666%); } }
     section.time-span:before {
       content: '';
       width: 2px;
@@ -970,16 +1018,26 @@ section {
       left: 0;
       margin: 0 auto;
       top: 0; }
+      @media (max-width: 800px) {
+        section.time-span:before {
+          z-index: 5;
+          opacity: 0.45;
+          height: 100px; } }
     section.time-span:after {
       content: '';
       width: 2px;
-      height: 86vh;
+      height: calc(100% - 167px);
       background-color: #ffffff;
       position: absolute;
       right: 0;
       left: 0;
       margin: 0 auto;
       top: 265px; }
+      @media (max-width: 800px) {
+        section.time-span:after {
+          opacity: 0.45;
+          height: 100px;
+          top: 235px; } }
   section .container {
     position: relative;
     padding: 50px 3%;
@@ -987,6 +1045,9 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     z-index: 1; }
+    @media (max-width: 800px) {
+      section .container {
+        display: inline-block; } }
     section .container .row {
       width: 100%;
       display: inline-block;
@@ -998,6 +1059,10 @@ section {
       min-height: 100%;
       position: relative;
       overflow: visible; }
+      @media (max-width: 800px) {
+        section .container header.timeline {
+          display: inline-block;
+          margin-bottom: 55px; } }
       section .container header.timeline:before, section .container header.timeline:after {
         content: ' ';
         display: block;
@@ -1013,6 +1078,9 @@ section {
         transform: translateX(-50%); }
       section .container header.timeline h2 {
         color: white; }
+        @media (max-width: 800px) {
+          section .container header.timeline h2 {
+            margin: 0; } }
         section .container header.timeline h2 .letters-tag {
           display: inline-block; }
       section .container header.timeline:before {
@@ -1030,6 +1098,12 @@ section {
     section:nth-child(4):before {
       height: 430px;
       top: -304px; }
+      @media (max-width: 800px) {
+        section:nth-child(4):before {
+          z-index: 5;
+          opacity: 0.45;
+          height: 100px;
+          top: 0; } }
     section:nth-child(4) .svg-edge {
       width: 100%;
       height: 350px;
@@ -1045,6 +1119,10 @@ section {
   section:last-child:before {
     height: 430px;
     top: -304px; }
+    @media (max-width: 800px) {
+      section:last-child:before {
+        height: 100px;
+        top: 0; } }
   section:last-child .svg-edge-2 {
     width: 100%;
     height: 350px;

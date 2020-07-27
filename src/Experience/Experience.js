@@ -7,11 +7,7 @@ import './Experience.css';
 import {Link} from "react-router-dom";
 
 
-// Add both three icon sets
-
-
 const Experience = (props) => {
-
 
 return (
     <section id="experience">
@@ -24,8 +20,7 @@ return (
             </Grid>
             <Grid container>
                 <Grid item xs={12}>
-                    <p>Here is the place I have worked and my working history.</p>
-
+                    <p>Here is a history timeline of the places I worked and experience I picked up.</p>
                     <Link to="/timeline" className="btn">View My Experience <i className="fas fa-arrow-right"></i></Link>
                 </Grid>
             </Grid>

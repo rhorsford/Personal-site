@@ -1,47 +1,48 @@
-section {
-  width: 100%;
-  padding: 100px 0 130px 0; }
-  section h1 {
-    margin-bottom: 1.5em; }
-
-#experience {
+#projects {
   background-color: #f5f5f5;
-  border: 0;
-  position: relative;
-  padding-bottom: 300px; }
-  #experience .MuiGrid-grid-xs-6:first-child {
-    padding: 0 50px 0 50px; }
-  #experience .btn {
-    margin-top: 15px;
-    max-width: 280px;
-    padding: 15px 15px;
-    width: 100%;
-    height: auto;
-    font-size: 1.2em;
-    background-color: #1dbf73;
-    color: white;
-    text-decoration: none;
-    position: relative;
-    display: inline-block; }
-    #experience .btn i {
-      font-size: 1.2em;
-      width: 30px;
-      position: relative;
-      top: 2px; }
-    #experience .btn:hover {
-      background-color: #20dc88; }
-
-.icon {
-  width: 100px;
-  height: 100%;
-  position: relative;
-  margin: 1.2em auto; }
-  .icon p, .icon h3 {
-    margin: 1em -55px 0.5em; }
-
-.skrollr .decade {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  min-height: 700px;
-  top: 100%; }
+  border-top: 0; }
+  #projects .card {
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer; }
+    #projects .card:hover .flip, #projects .card .hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      transform: rotateY(180deg); }
+    #projects .card .flip {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative; }
+    #projects .card .front {
+      z-index: 2;
+      transform: rotateY(0deg);
+      background-color: #222323; }
+      #projects .card .front img {
+        margin: auto 0;
+        width: 100%;
+        max-height: 300px; }
+    #projects .card .card-container {
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1dbf73; }
+      #projects .card .card-container a {
+        padding: 10px 15px;
+        border: 1px solid white;
+        border-radius: 3px;
+        color: white;
+        display: inline-block;
+        text-decoration: none; }
+      #projects .card .card-container h4, #projects .card .card-container p {
+        color: white;
+        margin-bottom: 0.75em; }
+    #projects .card .flip, #projects .card .front, #projects .card .card-container {
+      width: 100%;
+      height: 300px; }
+    #projects .card .front, #projects .card .card-container {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #projects .card:nth-child(3) .front {
+      background-color: #C4CDDA; }

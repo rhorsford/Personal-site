@@ -5,8 +5,10 @@ section {
   section h1 {
     margin-bottom: 1.5em; }
 
-#about .about-content {
-  padding: 0 50px 0 50px; }
+#about {
+  background-color: #FFFFFF; }
+  #about .about-content {
+    padding: 0 50px 0 50px; }
 
 .icon {
   width: 100px;

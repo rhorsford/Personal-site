@@ -8,7 +8,7 @@ main {
   background-image: linear-gradient(to bottom, #22DC88 0%, #1dbf73 100%);
   //background-image: linear-gradient(to bottom, #22DC88 0%, #27F898 100%);
   //height: 400rem;
-  //min-height: 300vh;
+  min-height: 500vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,13 +128,18 @@ main {
   height: 32px;
   bottom: 35px;
   right: 25px;
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
   float: left;
   text-align: center;
   text-transform: uppercase;
   z-index: 101;
+
+  @media(max-width:800px) {
+    right: 20px;
+    bottom: 15px;
+  }
 
 
   i {
@@ -271,6 +276,11 @@ main {
       margin-bottom: 1em;
       text-align: right;
 
+      @media(max-width: 1200px) {
+        left: 0;
+      }
+
+
       p, h3, h4, h2 {
         color: white;
       }
@@ -308,6 +318,11 @@ main {
       float: right;
       width: 47.5%;
       text-align: left;
+      right: -10px;
+
+      @media(max-width: 1200px) {
+        right: 0;
+      }
 
       .hexagon {
         color: white;
@@ -337,9 +352,23 @@ main {
     }
 
     .left, .right {
-      position: relative;
+      position: absolute;
       margin-bottom: 2em;
       margin-top: 2em;
+
+      @media(max-width: 1200px) {
+        width: calc(47.5% - 35px);
+
+
+      }
+
+      @media(max-width: 800px) {
+        width: 100%;
+        padding: 0 60px;
+        text-align: center;
+        position: relative;
+      }
+
 
       .icon {
         //position: absolute;
@@ -387,6 +416,11 @@ main {
   height: 100%;
   z-index: 101;
   transform: translateX(-50%);
+
+  @media(max-width: 800px) {
+    transform: translateX(0%);
+    right: 15px;
+  }
 
   ul {
     position: relative;
@@ -474,10 +508,20 @@ section {
   position: relative;
 
 
-
   &.time-span {
     border: 0;
     height: 100vh;
+
+    @media(max-width: 800px) {
+      display: inline-block;
+      height: auto;
+      padding: 100px 0 0 0;
+      float:left;
+    }
+
+    &:last-child {
+      height: 915px;
+    }
 
     &.waves {
       position: relative;
@@ -508,6 +552,26 @@ section {
         -o-transform: rotate(180deg);
         transform: rotate(180deg);
         top: 310px;
+
+        @media(max-width: 1414px) {
+          top: calc(310px - 20%);
+        }
+
+        @media(max-width: 995px) {
+          top: calc(280px - 30%);
+        }
+
+        @media(max-width: 800px) {
+          top: calc(310px - 15%);
+        }
+
+        @media(max-width: 652px) {
+          top: calc(280px - 15%);
+        }
+
+        @media(max-width: 590px) {
+          top: calc(280px - 16.666%);
+        }
       }
     }
 
@@ -521,18 +585,29 @@ section {
       left: 0;
       margin: 0 auto;
       top: 0;
+      @media(max-width: 800px) {
+        z-index: 5;
+        opacity: 0.45;
+        height:100px;
+      }
     }
 
     &:after {
       content: '';
       width: 2px;
-      height: 86vh;
+      height: calc(100% - 167px);
       background-color: #ffffff;
       position: absolute;
       right: 0;
       left: 0;
       margin: 0 auto;
       top: 265px;
+
+      @media(max-width: 800px) {
+        opacity: 0.45;
+        height: 100px;
+        top: 235px;
+      }
     }
 
   }
@@ -544,6 +619,10 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     z-index: 1;
+
+    @media(max-width: 800px) {
+      display: inline-block;
+    }
 
     .row {
       width: 100%;
@@ -558,6 +637,12 @@ section {
       min-height: 100%;
       position: relative;
       overflow: visible;
+
+      @media(max-width: 800px) {
+        //height: 40px;
+        display: inline-block;
+        margin-bottom: 55px;
+      }
 
       &:before, &:after {
         content: ' ';
@@ -576,6 +661,10 @@ section {
 
       h2 {
         color: white;
+        @media(max-width: 800px) {
+          margin: 0;
+        }
+
 
         .letters-tag {
           display: inline-block;
@@ -608,6 +697,15 @@ section {
     &:before {
       height: 430px;
       top: -304px;
+
+      @media(max-width: 800px) {
+        z-index: 5;
+        opacity: 0.45;
+        height:100px;
+        top: 0;
+      }
+
+
     }
 
     .svg-edge {
@@ -634,6 +732,11 @@ section {
     &:before {
       height: 430px;
       top: -304px;
+
+      @media(max-width: 800px) {
+        height: 100px;
+        top: 0;
+      }
     }
 
     .svg-edge-2 {
