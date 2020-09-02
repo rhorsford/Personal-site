@@ -260,9 +260,11 @@ const TimeTitle = (props) => {
 };
 
 const Back = () => (
+    <div className="back-bar">
     <a href="/" rel="noopener" className="back">
         <i className="fa fa-arrow-circle-left" aria-hidden="true"></i><span>Home</span>
     </a>
+    </div>
 );
 
 
@@ -295,9 +297,9 @@ const Time = () => {
                         </Parallax>
                         <div className="row">
                             <div className="right">
-                                <div className="icon" id="icon-1">
-                                    {/*<div className="hexagon"></div>*/}
-                                </div>
+                                {/*<div className="icon" id="icon-1">*/}
+                                {/*    /!*<div className="hexagon"></div>*!/*/}
+                                {/*</div>*/}
                             </div>
                         </div>
                     </div>
@@ -331,13 +333,13 @@ const Time = () => {
                                 </Fade>
                             </div>
                         </Parallax>
-                        <div className="row">
-                            <div className="left">
-                                <div className="icon">
-                                    {/*<div className="hexagon"></div>*/}
-                                </div>
-                            </div>
-                        </div>
+                        {/*<div className="row">*/}
+                        {/*    <div className="left">*/}
+                        {/*        <div className="icon">*/}
+                        {/*            /!*<div className="hexagon"></div>*!/*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </section>
@@ -369,13 +371,13 @@ const Time = () => {
                                 </Fade>
                             </div>
                         </Parallax>
-                        <div className="row">
-                            <div className="right">
-                                <div className="icon">
-                                    {/*<div className="hexagon"></div>*/}
-                                </div>
-                            </div>
-                        </div>
+                        {/*<div className="row">*/}
+                        {/*    <div className="right">*/}
+                        {/*        <div className="icon">*/}
+                        {/*            /!*<div className="hexagon"></div>*!/*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </section>
@@ -413,13 +415,13 @@ const Time = () => {
                                 </Fade>
                             </div>
                         </Parallax>
-                        <div className="row">
-                            <div className="left">
-                                <div className="icon">
-                                    {/*<div className="hexagon"></div>*/}
-                                </div>
-                            </div>
-                        </div>
+                        {/*<div className="row">*/}
+                        {/*    <div className="left">*/}
+                        {/*        <div className="icon">*/}
+                        {/*            /!*<div className="hexagon"></div>*!/*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </section>
@@ -454,13 +456,13 @@ const Time = () => {
                                 </Fade>
                             </div>
                         </Parallax>
-                        <div className="row">
-                            <div className="right">
-                                <div className="icon">
-                                    {/*<div className="hexagon"></div>*/}
-                                </div>
-                            </div>
-                        </div>
+                        {/*<div className="row">*/}
+                        {/*    <div className="right">*/}
+                        {/*        <div className="icon">*/}
+                        {/*            /!*<div className="hexagon"></div>*!/*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </section>

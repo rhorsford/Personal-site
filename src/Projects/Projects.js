@@ -24,7 +24,7 @@ const Projects = (props) => {
     const Projects = [
         {img: asteroids, head: 'Javascript Asteroids Game', content: 'Javascript', url: '#', urlContent: 'Play', funct: playAsteroids},
         {img: opta, head: 'Opta Sport', content: 'HTML5 /SCSS Javascript', url: '/timeline', urlContent: 'View'},
-        {img: password, head: 'Password Manager', content: 'Mongo Express React Node SCSS', url: '/timeline', urlContent: 'View Rep'},
+        {img: password, head: 'Password Manager', content: 'Mongo Express React Node SCSS', url: '/timeline', urlContent: 'View Repo'},
     ];
 
     const hover = (e) => {

@@ -17,9 +17,6 @@ const NavBar = (props) => {
         let elementStart = document.querySelector(startpoint);
         let elementEnd = document.querySelector(endpoint);
 
-        console.log(props.page, "page");
-        console.log(props.page == "timeline", "page  ww");
-
         if(props.page == "timeline" && elementStart === null && elementEnd === null ) {
 
             if (window.matchMedia("(max-width: 680px)").matches) {

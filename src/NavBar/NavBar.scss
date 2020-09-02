@@ -71,7 +71,7 @@ nav {
       background-color: white;
       z-index: 21;
       overflow: visible;
-      transition: all 1s;
+      transition: all 0.2s;
     }
 
     .mobile-nav {
@@ -128,7 +128,7 @@ nav {
 .nav-item {
   position: absolute;
   left: -9999px;
-  transition: all 2s;
+  transition: all 1s;
 
   &.open {
     width:100%;

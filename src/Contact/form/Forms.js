@@ -5,6 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import Input from '@material-ui/core/Input';
 import Button from '@material-ui/core/Button';
+import axios from 'axios';
 import "./Form.css";
 
 const Form = () => {
@@ -57,6 +58,13 @@ const Form = () => {
         message: ""
     });
 
+    const [formField, formFieldState] = useState( {
+            fullName: "",
+            email: "",
+            message: "",
+
+    });
+
     const classes = useStyles();
 
     const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
@@ -64,6 +72,10 @@ const Form = () => {
     const validateForm = () => {
         let valid = true;
         console.log(errorState)
+        console.log(formField)
+
+
+
         Object.values(errorState).forEach(
             (val) => val.length > 1 && (valid = false)
         );
@@ -74,13 +86,13 @@ const Form = () => {
         e.preventDefault();
         const { name, value } = e.target;
 
-        console.log(name, 'name')
-        console.log(value, 'value')
-        // let errorsMsg = errorMsgState;
+        console.log(value);
+        console.log(name);
+        console.log(e.target.value, 'etarget');
 
-        console.log(errorState);
 
-        console.log()
+
+        console.log(errorState.fullName,'ddd')
         switch (name) {
               case 'fullName':
                   errorState.fullName =
@@ -104,14 +116,44 @@ const Form = () => {
               default:
                 break;
         }
-        // setErrorState({[name]: value});
         setErrorMsgState({errorMsgState: {[name]: value }});
+
+        // formFieldState(prevState => ({
+        //     ...prevState,
+        //     form:{[e.target.name]: [e.target.value]}
+        // }));
+
+        formFieldState(prevState => ({
+            ...prevState,
+         [name]: value
+        }));
+
     }
 
-    // const errors = errorState.errors;
+
 
    const handleSubmit = (e) => {
         e.preventDefault();
+
+        console.log(formField, 'sub');
+       fetch('http://localhost:3002/send',{
+           method: "POST",
+           body: JSON.stringify(formField),
+           headers: {
+               'Accept': 'application/json',
+               'Content-Type': 'application/json'
+           },
+       }).then(
+           (response) => (response.json())
+       ).then((response)=>{
+           if (response.status === 'success'){
+               alert("Message Sent.");
+               this.resetForm()
+           }else if(response.status === 'fail'){
+               alert("Message failed to send.")
+           }
+       })
+
         if(validateForm(errors)) {
           console.info('Valid Form')
         }else{
@@ -120,8 +162,11 @@ const Form = () => {
       }
 
     console.log(errorState)
+    console.log(formField)
     console.log(errorState.email, "email")
     const {errors} = errorState;
+
+
 
 
     return (
