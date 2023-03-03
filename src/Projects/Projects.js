@@ -22,9 +22,9 @@ const Projects = (props) => {
     };
 
     const Projects = [
-        {img: asteroids, head: 'Javascript Asteroids Game', content: 'Javascript', url: '#', urlContent: 'Play', funct: playAsteroids},
-        {img: opta, head: 'Opta Sport', content: 'HTML5 /SCSS Javascript', url: '/timeline', urlContent: 'View'},
-        {img: password, head: 'Password Manager', content: 'Mongo Express React Node SCSS', url: '/timeline', urlContent: 'View Repo'},
+        {img: asteroids, head: 'Javascript Asteroids Game', content: 'Javascript', url: '', urlContent: 'Play', funct: playAsteroids},
+        {img: opta, head: 'Opta Sport', content: 'HTML5 /SCSS Javascript', url: 'http://web.archive.org/web/20190109231032/https://www.optasports.com/', urlContent: 'View'},
+        {img: password, head: 'Password Manager', content: 'Mongo Express React Node SCSS', url: 'https://www.github.com/rhorsford/password-manager-app', urlContent: 'View Repo'},
     ];
 
     const hover = (e) => {
@@ -58,7 +58,7 @@ const Projects = (props) => {
                                                 <div>
                                                     <h4>{project.head}</h4>
                                                     <p>{project.content}</p>
-                                                    <Link to={project.url} className="btn" onClick={project.funct}>{project.urlContent}</Link>
+                                                    <Link to={{pathname:project.url}} className="btn" onClick={project.funct} target={project.url.includes("http") ? "_blank" : "_self"} >{project.urlContent}</Link>
                                                 </div>
                                             </div>
                                         </div>

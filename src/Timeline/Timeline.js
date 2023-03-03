@@ -66,6 +66,7 @@ const Years = [
     {title: '2016'},
     {title: '2018'},
     {title: '2020'},
+    {title: '2022'},
 ];
 
 const rndNumber = Math.floor(Math.random() * 70);
@@ -427,7 +428,6 @@ const Time = () => {
             </section>
             <section id="year2020" className="time-span">
 
-                <Svg svg={optim} className="svg-edge-2"/>
                 <div className="container">
 
                     <TimeTitle number={4}/>
@@ -436,10 +436,10 @@ const Time = () => {
                             <div className="row">
                                 <Fade bottom>
                                     <div className="left">
-                                        <h2>Orangebus</h2>
+                                        <h2>Orangebus/Capita Consulting</h2>
                                         <h3>Remote Developer</h3>
-                                        <p className="date">Jan 2020 to Current</p>
-                                        <p>In my current role, I work as part of the service team, working in an agile
+                                        <p className="date">Jan 2020 to April 2022</p>
+                                        <p>I work as part of the service team, working in an agile
                                             format, I take on service desk tickets ranging in issues. And dealing with
                                             clients such as BBC, Barnet and SGN. I also follow a strict CAB process in
                                             order to make sure a ticket is resolved and gone through the accepted test
@@ -466,7 +466,48 @@ const Time = () => {
                     </div>
                 </div>
             </section>
+            <section id="year2022" className="time-span">
 
+                <Svg svg={optim} className="svg-edge-2"/>
+                <div className="container">
+
+                    <TimeTitle number={5}/>
+                    <div id="2022" className="timeline">
+                        <Parallax className="custom-class" y={[-20, 30]} tagOuter="div">
+                            <div className="row">
+                                <Fade bottom>
+                                    <div className="right">
+                                        <h2>Fostr</h2>
+                                        <h3>Senior Developer</h3>
+                                        <p className="date">April 2022 to March 2023</p>
+                                        <p> I work in a team of developers in an agency. I
+                                            work on high-profile clients such as Triangl, Patou, Kyle Jenna
+                                            Moon sites and many more. I recently started learning and
+                                            working with Shopify, more specifically shopify 2.0 with work on
+                                            metafields, Dawn template and Liquid templating. I work in an
+                                            agile environment with Jira and ticket management but recently
+                                            been on a lot of new rebuilds and projects learning and leading in
+                                            a team consisting of Scrum master, product owner other
+                                            developers.</p>
+
+                                        <div className="skills">
+                                            <h4>Technologies Used</h4>
+                                            <p>html5, CSS, jquery/javascript, Shopify, Liquid Templating, NPM</p>
+                                        </div>
+                                    </div>
+                                </Fade>
+                            </div>
+                        </Parallax>
+                        {/*<div className="row">*/}
+                        {/*    <div className="right">*/}
+                        {/*        <div className="icon">*/}
+                        {/*            /!*<div className="hexagon"></div>*!/*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                    </div>
+                </div>
+            </section>
         </div>
     )
 };
